@@ -28,6 +28,8 @@ class Song
   end
 
   def genre_count
-
+    genres_hash = {}
+    @@genres.uniq.each do |genre|
+      if genres_hash.has_key?(genre)
   end
 end
