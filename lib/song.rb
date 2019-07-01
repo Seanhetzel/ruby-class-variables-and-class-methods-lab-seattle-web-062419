@@ -29,7 +29,9 @@ class Song
 
   def genre_count
     genres_hash = {}
+    count = 1
     @@genres.uniq.each do |genre|
       if genres_hash.has_key?(genre)
+        genres_hash[genre] = count += 1
   end
 end
