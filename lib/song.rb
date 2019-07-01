@@ -34,7 +34,7 @@ class Song
       if genres_hash.has_key?(genre)
         genres_hash[genre] = count += 1
       else
-        genres_hash[genre] = count
+        genres_hash[genre] = 1
       end
     end
     genres_hash
